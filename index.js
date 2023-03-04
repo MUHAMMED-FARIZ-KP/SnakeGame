@@ -19,13 +19,13 @@ function main(ctime) {
 }
 
 function isCollide(snake) {
-    // If you bump into yourself 
+    // bump  itself 
     for (let i = 1; i < snakeArr.length; i++) {
         if(snake[i].x === snake[0].x && snake[i].y === snake[0].y){
             return true;
         }
     }
-    // If you bump into the wall
+    // bump into the wall
     if(snake[0].x >= 18 || snake[0].x <=0 || snake[0].y >= 18 || snake[0].y <=0){
         return true;
     }
@@ -43,7 +43,7 @@ function gameEngine(){
         musicSound.play();
         score = 0; 
     }
-    // If you have eaten the food, increment the score and regenerate the food
+    // If eaten the food, increment the score and regenerate the food
     if(snakeArr[0].y === food.y && snakeArr[0].x ===food.x){
        
         score += 1;
@@ -95,7 +95,7 @@ function gameEngine(){
 }
 
 
-// Main logic starts here
+//Main logic
 let hiscore = localStorage.getItem("hiscore");
 if(hiscore === null){
     hiscoreval = 0;
