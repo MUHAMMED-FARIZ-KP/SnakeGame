@@ -1,3 +1,4 @@
+function func1(){
 let inputDir = {x: 0, y: 0};    
 let speed = 19;
 let score = 0;
@@ -138,3 +139,4 @@ window.addEventListener('keydown', e =>{
     }
 
 });
+}
