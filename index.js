@@ -35,12 +35,9 @@ function isCollide(snake) {
 function gameEngine(){
     
     if(isCollide(snakeArr)){
-        gameOverSound.play();
-        musicSound.pause();
         inputDir =  {x: 0, y: 0}; 
         alert("Game Over. Press any key to play again!");
         snakeArr = [{x: 13, y: 15}];
-        musicSound.play();
         score = 0; 
     }
     // If eaten the food, increment the score and regenerate the food
