@@ -43,14 +43,14 @@
 }
 
 .head{
-    background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+    background-color:black;
     border: 2px solid rgb(34, 4, 34); 
     transform: scale(1.02);
     border-radius: 9px;
 }
 
 .snake{
-    background-color: purple;
+    background-color: brown;
     border: .25vmin solid white;
     border-radius: 12px;
 }
