@@ -52,7 +52,6 @@
     transform: scale(1.02);
     border-radius: 9px;
 }
-
 .snake{
     background-color: rgb(43, 172, 139);
     border: .25vmin solid white;
