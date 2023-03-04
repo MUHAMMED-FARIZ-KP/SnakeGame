@@ -36,7 +36,7 @@ function gameEngine(){
     
     if(isCollide(snakeArr)){
         inputDir =  {x: 0, y: 0}; 
-        alert("Game Over. Press any key to play again!");
+        alert("GAME OVER. Click OK to play again!");
         snakeArr = [{x: 13, y: 15}];
         score = 0; 
     }
@@ -87,8 +87,6 @@ function gameEngine(){
     foodElement.style.gridColumnStart = food.x;
     foodElement.classList.add('food')
     board.appendChild(foodElement);
-
-
 }
 
 
