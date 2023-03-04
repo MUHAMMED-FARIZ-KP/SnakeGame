@@ -47,10 +47,9 @@
 }
 
 .head{
-    background-color:grey;
-    border: 2px solid rgb(34, 4, 34); 
+    background-image: url("snakehead.png");
+    background-size: cover;
     transform: scale(1.02);
-    border-radius: 9px;
 }
 .snake{
     background-color: rgb(43, 172, 139);
@@ -59,9 +58,9 @@
 }
 
 .food{
-    background: linear-gradient(red, purple);
-    border: .25vmin solid black;
-    border-radius: 8px;
+    background-image: url("apple.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 input[type=button], input[type=submit], input[type=reset] {
     background-color: #04AA6D;
