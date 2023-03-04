@@ -46,8 +46,8 @@ function gameEngine(){
         score += 1;
         if(score>hiscoreval){
             hiscoreval = score;
-            localStorage.setItem("hiscore", JSON.stringify(hiscoreval));
-            hiscoreBox.innerHTML = "HiScore: " + hiscoreval;
+            localStorage.setItem("Topscore", JSON.stringify(hiscoreval));
+            hiscoreBox.innerHTML = "Topscore: " + hiscoreval;
         }
         scoreBox.innerHTML = "Score: " + score;
         snakeArr.unshift({x: snakeArr[0].x + inputDir.x, y: snakeArr[0].y + inputDir.y});
@@ -91,14 +91,14 @@ function gameEngine(){
 
 
 //Main logic
-let hiscore = localStorage.getItem("hiscore");
+let hiscore = localStorage.getItem("Topscore");
 if(hiscore === null){
     hiscoreval = 0;
-    localStorage.setItem("hiscore", JSON.stringify(hiscoreval))
+    localStorage.setItem("Topscore", JSON.stringify(hiscoreval))
 }
 else{
     hiscoreval = JSON.parse(hiscore);
-    hiscoreBox.innerHTML = "HiScore: " + hiscore;
+    hiscoreBox.innerHTML = "Topscore: " + hiscore;
 }
 
 window.requestAnimationFrame(main);
