@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(20,137,18);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    
+}
+#hd{
+    font-size: 100px;
+    color: aliceblue;
+    margin-left: 33%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.cmp{
+    
+    color: aliceblue;
+    font-size: 40px;
+    border-width:3px;
+    border-style:solid;
+    border-color:white;
+    text-align: center;
+}
+.cmp:hover{
+    background-color: rgb(158, 64, 64);
+}
