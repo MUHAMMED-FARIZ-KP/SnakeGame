@@ -27,6 +27,7 @@ body{
     margin: 40px;
     border-radius: 4px;
     box-shadow: 0px 15px 10px -15px #111;  
+    margin-left: 200px;
 }
 .cmp:hover{
     background-color: rgb(158, 64, 64);
