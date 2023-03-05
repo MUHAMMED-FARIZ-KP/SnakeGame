@@ -44,11 +44,13 @@ function gameEngine(){
         /*alert("GAME OVER. Click OK to play again!");*/
         document.getElementById('status').innerHTML="GAME OVER";
         var b=document.createElement('button');
-        b.innerHTML="Reload";
+        b.innerHTML="Replay";
         document.getElementById('status').appendChild(b);
+        b.style.marginLeft="30px";
         b.style.width="60px";
-        b.style.height="40px";
-        b.style.backgroundColor="yellow";
+        b.style.height="30px";
+        b.style.backgroundColor="green";
+        b.style.fontFamily="Coiny, cursive";
         b.style.color="black";
         b.addEventListener('click',restart);
         
