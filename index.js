@@ -6,6 +6,7 @@ let lastPaintTime = 0;
 let snakeArr = [
     {x: 13, y: 15}
 ];
+
 food = {x: 6, y: 7};
 
 function main(ctime) {
@@ -17,7 +18,9 @@ function main(ctime) {
     lastPaintTime = ctime;
     gameEngine();
 }
-
+function restart(){
+    document.getElementById('status').innerHTML="";
+}
 function isCollide(snake) {
     // bump  itself 
     for (let i = 1; i < snakeArr.length; i++) {
@@ -36,13 +39,22 @@ function gameEngine(){
     
     if(isCollide(snakeArr)){
         inputDir =  {x: 0, y: 0}; 
-        alert("GAME OVER. Click OK to play again!");
+        /*alert("GAME OVER. Click OK to play again!");*/
+        document.getElementById('status').innerHTML="GAME OVER";
+        var b=document.createElement('button');
+        b.innerHTML="Reload";
+        document.getElementById('status').appendChild(b);
+        b.style.width="60px";
+        b.style.height="40px";
+        b.style.backgroundColor="yellow";
+        b.style.color="black";
+        b.addEventListener('click',restart);
+        
         snakeArr = [{x: 13, y: 15}];
-        score = 0; 
+        score = 0;
     }
     // If eaten the food, increment the score and regenerate the food
     if(snakeArr[0].y === food.y && snakeArr[0].x ===food.x){
-       
         score += 1;
         if(score>hiscoreval){
             hiscoreval = score;
@@ -58,6 +70,7 @@ function gameEngine(){
     }
 
     // Moving the snake
+    
     for (let i = snakeArr.length - 2; i>=0; i--) { 
         snakeArr[i+1] = {...snakeArr[i]};
     }
