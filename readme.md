@@ -12,3 +12,11 @@
  Obstacles such as walls or other hazards that the snake must avoid
  A scoring system that keeps track of the player's progress
  An end condition, such as when the snake collides with a wall or its own body, that triggers the end of the game
+
+
+
+STEPS FOR CONTRIBUTING TO OUR PROJECT
+
+1.Fork this repo
+2.commit and push your changes
+3.Send a pull request
