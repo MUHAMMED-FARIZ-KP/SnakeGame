@@ -1,4 +1,4 @@
-
+const foodAudio=new Audio("eatingNew.mp3")
 let inputDir = {x: 0, y: 0};    
 let speed = 19;
 let score = 0;
@@ -55,6 +55,7 @@ function gameEngine(){
     }
     // If eaten the food, increment the score and regenerate the food
     if(snakeArr[0].y === food.y && snakeArr[0].x ===food.x){
+        foodAudio.play();
         score += 1;
         if(score>hiscoreval){
             hiscoreval = score;
