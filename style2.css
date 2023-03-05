@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(20,137,18);
+    background-color: #74b88d;
     min-height: 100vh;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
@@ -8,17 +8,25 @@ body{
 #hd{
     font-size: 100px;
     color: aliceblue;
-    margin-left: 33%;
-    font-family: 'Times New Roman', Times, serif;
+    margin-left: 30%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.main{
+    display: flex;
+   margin-left: 450px;
 }
 .cmp{
-    
-    color: aliceblue;
-    font-size: 40px;
-    border-width:3px;
-    border-style:solid;
-    border-color:white;
-    text-align: center;
+    display: inline;
+    width: 110px;
+    margin: 0 auto;
+    height: 70px;
+	background-color: #f5f5f5;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    margin: 40px;
+    border-radius: 4px;
+    box-shadow: 0px 15px 10px -15px #111;  
 }
 .cmp:hover{
     background-color: rgb(158, 64, 64);
