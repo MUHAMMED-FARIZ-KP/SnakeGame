@@ -1,9 +1,6 @@
 body{
     background: url("bg.jpg"); 
-
-    background-color: #74b88d;
     min-height: 100vh;
-    background-size: 100vw 100vh;
     background-repeat: no-repeat;
     
 }
