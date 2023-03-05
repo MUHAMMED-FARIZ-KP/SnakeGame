@@ -1,4 +1,5 @@
 const foodAudio=new Audio("eatingNew.mp3")
+const end=new Audio('end.mp3')
 let inputDir = {x: 0, y: 0};    
 let speed = 19;
 let score = 0;
@@ -39,6 +40,7 @@ function gameEngine(){
     
     if(isCollide(snakeArr)){
         inputDir =  {x: 0, y: 0}; 
+        end.play();
         /*alert("GAME OVER. Click OK to play again!");*/
         document.getElementById('status').innerHTML="GAME OVER";
         var b=document.createElement('button');
