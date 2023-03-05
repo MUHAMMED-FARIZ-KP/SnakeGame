@@ -80,7 +80,7 @@ input[type=button], input[type=submit], input[type=reset] {
     font-size: 50px;
     color:red;
     font-weight:bold;
-    text-align: center;
     position: absolute;
+    left:13%;
     top: 49%;
 }
