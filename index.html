@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esurio Serpense</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
+    <p id="hd">Esurio Serpens</p>
     
-    <div class="body">
-        <p id="status"></p>
-        <div id="scoreBox">Score: 0</div>
-        <div id="hiscoreBox">TopScore: 0</div>
-        <div id="board"></div>
-        <input type="button" value="Home" onclick="func1()">
-    </div> 
+    <div class="main">
+
+        <div class="cmp" onclick="funct()">START</div>
+        <div class="cmp">SETTINGS</div>
+    </div>
+    <script>
+        function funct(){
+            window.open("display.html")
+        }
+    </script>    
+    
 </body>
-<script src="game.js"></script>
 </html>

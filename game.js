@@ -153,6 +153,6 @@ window.addEventListener('keydown', e =>{
 
 });
 function func1(){
-    window.open("index2.html")
+    window.open("index.html")
 
 }
